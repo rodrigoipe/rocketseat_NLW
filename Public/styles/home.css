@@ -1,0 +1,93 @@
+#page-home {
+    height: 100vh;/*Altura. vh= ajuste a tela*/
+
+    background: url('../extras-aula-1/icones/home-background.svg') no-repeat; /* adiciona a foto no fundo da div page-home, "no-repeat" é para não repetir */
+    background-position: 35vw bottom;/*vw = largura, bottom, faz com que a imagem fique para baixo */
+}
+
+#page-home .content {
+    width: 90%; /*Largura*/
+    max-width: 1100px; /*Largura Maxima*/
+    height: 100%;
+    display: flex;
+    margin: 0 auto; /*Margem das laterais auto e em cima e em baixo 0*/
+    flex-direction: column;
+}
+
+#page-home header {
+    margin-top: 48px; /*margem do topo*/
+    display: flex;
+    align-items: center;/*Alinhe os items ao centro (Ecoleta e cadastre um ponto de coleta*/
+    justify-content: space-between;/* Jutificar o coteudo de dentro. Space-beteen coloca um espaço entr eles*/
+}
+/*.red"." é uma referencia para uma class, logo em seguida o nome da classe
+    background-color: red;
+} */
+
+#page-home header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700; /*Fonte*/
+    
+}
+#page-home header a span {
+    margin-right: 16px;
+    display: flex;
+    background-image: url('../extras-aula-1/icones/log-in.svg');
+    width: 20px;
+    height: 20px;
+
+}
+#page-home main {
+    max-width: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*Centraliza a coluna*/
+}
+#page-home main h1 {
+    font-size: 54px;
+}
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;/*Altura da linha*/
+    margin-top: 24px;
+}
+#page-home main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px;/*arredondamento de bordas*/
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    transition: 400ms; /* suavisa a mudança de cor do hover*/
+    
+}
+#page-home main a:hover { /*Qaundo estiver com hover, consegue fazer uma estilização especial (quando o mouse 
+    estiver emcima do botao ele mudara de cor*/ 
+    background-color: #2fb86e;
+}
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex; /*imagem referenta a after*/
+    align-items: center;/* edição da imagem after*/
+    justify-content: center; /*edição da imagem after*/
+}
+#page-home main a span::after{/*pseudo elemento criado atraves css*/
+    content: "";
+    background-image: url('../extras-aula-1/icones/search.svg');
+    width: 20px;
+    height: 20px;
+
+} 
+#page-home main a strong {
+    color: white;
+    flex: 1;
+    text-align: center;
+}

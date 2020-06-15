@@ -1,0 +1,31 @@
+:root { /*se referencia a rais do documento html, e podem ser colocadas propriedade que serao repedidas em formato de variaveis */
+    --title-color: #322153; /*atalho para alterar rodas as cores dessa cor*/
+    --primary-color:#34cb79;  
+}
+
+*{/*Referencia todos os seletores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+/*Box Model -  toda caixa tem largura, altura, espaçamentos, preenchimentos, bordas, cor ,posicionamento, alinhamento 
+fundo e maneira que é vista pelo html (display)
+Caixa do tipo "inline (Em linha), ocupa apenas o seu espaco, ja caixas do "block" oculpam a linha toda*/
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; 
+}
+
+a {
+    text-decoration: none; /*Retira a linha de baixo do texto*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-family: Ubuntu, sans-serif;  
+}
